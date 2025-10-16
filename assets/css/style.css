@@ -20,8 +20,6 @@
 body {
     margin: 0;
     font-family: "Gothic Bold", "Gothic Regular", "MedievalSharp Regular";
-    background-image: url("../img/img/smoke-bg.jpg");
-    background-attachment: fixed;
 }
 
 header {
@@ -78,4 +76,37 @@ h2 {
 
 .herocontent {
     text-align: center;
+}
+
+.awardsandraces {
+    background-image: url("../img/img/smoke-bg.jpg");
+    background-attachment: fixed;
+    height: 200vh;
+}
+
+.awards, .races, .racespresentation {
+    border: 1px solid #C7A480;
+    margin: 5%;
+}
+
+.awards {
+    background-image: url(../img/img/awards-bg.png);
+    background-position: center;
+    display: flex;
+}
+
+.races {
+    display: flex;
+}
+
+.raceslogo {
+    width: 5%;
+}
+
+.awardlogo {
+    width: 10%;
+}
+
+.racesandpresentation {
+    display: flex;
 }

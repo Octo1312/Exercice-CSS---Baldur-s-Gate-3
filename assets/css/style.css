@@ -1,0 +1,74 @@
+* {
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: "MedievalSharp Regular";
+    src: url(../fonts/MedievalSharp/MedievalSharp-Regular.ttf);
+}
+
+@font-face {
+    font-family: "Gothic Regular";
+    src: url("../fonts/Gothic_A1/GothicA1-Regular.ttf");
+}
+
+@font-face {
+    font-family: "Gothic Bold";
+    src: url("../fonts/Gothic_A1/GothicA1-Bold.ttf");
+}
+
+body {
+    margin: 0;
+    font-family: "Gothic Bold", "Gothic Regular", "MedievalSharp Regular";
+    background-image: url("../img/img/smoke-bg.jpg");
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0);
+    z-index: 1000;
+    overflow: visible;
+}
+
+.logo-bg3 {
+    width: 10%;
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+}
+
+.nav-link {
+    display: flex;
+    gap: 25px;
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    font-family: "MedievalSharp Regular";
+}
+
+h2 {
+    font-family: "MedievalSharp Regular";
+}
+
+.partytime {
+    height: 100vh;
+}
+
+.hero__video {
+    position: absolute;
+    object-fit: cover;
+    width: 100%;
+    z-index: -1000;
+}
+
+.hero__content {
+    display: flex;
+    flex-direction: column;
+}

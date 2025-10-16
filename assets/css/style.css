@@ -21,9 +21,10 @@ body {
     margin: 0;
     font-family: "Gothic Bold", "Gothic Regular", "MedievalSharp Regular";
     background-image: url("../img/img/smoke-bg.jpg");
+    background-attachment: fixed;
 }
 
-.header {
+header {
     position: fixed;
     top: 0;
     left: 0;
@@ -59,16 +60,22 @@ h2 {
 
 .partytime {
     height: 100vh;
+    position: relative;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
 }
 
-.hero__video {
+.herovideo {
     position: absolute;
     object-fit: cover;
     width: 100%;
-    z-index: -1000;
+    height: 100%;
+    z-index: -1;
 }
 
-.hero__content {
-    display: flex;
-    flex-direction: column;
+.herocontent {
+    text-align: center;
 }

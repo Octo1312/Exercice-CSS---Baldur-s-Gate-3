@@ -20,6 +20,19 @@
 body {
     margin: 0;
     font-family: "Gothic Bold", "Gothic Regular", "MedievalSharp Regular";
+    background-image: url("../img/img/smoke-bg.jpg");
+    background-attachment: fixed;
+}
+
+img {
+    max-width: 100%;
+}
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
 }
 
 header {
@@ -34,26 +47,54 @@ header {
 
 .logo-bg3 {
     width: 10%;
+    object-fit: cover;
 }
 
 .nav {
     display: flex;
     align-items: center;
+    justify-content: center;
+    width: 100%;
+    gap: 40%;
 }
 
 .nav-link {
     display: flex;
     gap: 25px;
     list-style-type: none;
+    align-items: center;
 }
 
 a {
     text-decoration: none;
     font-family: "MedievalSharp Regular";
+    color: #FBCEA0;
+}
+
+.btn {
+    border: 1px solid black;
+    background-color: #FBCEA0;
+    border-radius: 1rem;
+    color: black;
+    padding: 2%;
+}
+
+h1 {
+    color: #FBCEA0;
 }
 
 h2 {
     font-family: "MedievalSharp Regular";
+    color: #FBCEA0;
+}
+
+h3 {
+    font-family: "MedievalSharp Regular";
+    color: white;
+}
+
+p {
+    color: white;
 }
 
 .partytime {
@@ -78,35 +119,77 @@ h2 {
     text-align: center;
 }
 
-.awardsandraces {
-    background-image: url("../img/img/smoke-bg.jpg");
-    background-attachment: fixed;
-    height: 200vh;
-}
-
-.awards, .races, .racespresentation {
-    border: 1px solid #C7A480;
-    margin: 5%;
+.awards-container {
+    margin: 5% 0;
 }
 
 .awards {
-    background-image: url(../img/img/awards-bg.png);
-    background-position: center;
+    width: 50%;
     display: flex;
+    border: 1px solid #C7A480;
+    border-radius: 1rem;
+    margin: 0 auto;
+    padding: 1%;
+    background-image: url("../img/img/awards-bg.png");
 }
 
-.races {
-    display: flex;
+.award-title {
+    width: 25%;
+    text-align: center;
 }
 
-.raceslogo {
-    width: 5%;
+.awards-image {
+    display: flex;
+    width: 75%;
 }
 
 .awardlogo {
-    width: 10%;
+    object-fit: contain;
+    width: 25%;
 }
 
-.racesandpresentation {
-    display: flex;
+.award-title h3 {
+    font-family: "Gothic Regular";
+    font-size: 0.8rem;
+    margin-bottom: 0.5%;
+    margin-top: 12%;
 }
+
+.award-title h2 {
+    font-size: 2rem;
+    margin-top: 0%;
+    margin-bottom: 2%;
+    color: #FBCEA0;
+}
+
+.races-container {
+    display: flex;
+    gap: 10%;
+}
+
+.races-list {
+    width: 50%;
+    border: 1px solid #C7A480;
+    border-radius: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+    background-image: url("../img/img/races-bg.jpg");
+    background-position: center;
+}
+
+.races-item {
+    width: 33%;
+}
+
+.races-presentation {
+    width: 50%;
+    border: 1px solid #C7A480;
+    border-radius: 1rem;
+}
+
+.races-item img {
+    max-width: 25%;
+}
+

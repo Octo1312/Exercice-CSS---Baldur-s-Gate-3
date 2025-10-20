@@ -450,29 +450,30 @@ p {
     margin-bottom: 0;
 }
 
+.fanartpic h2, .fanartpic h3 {
+    text-align: right;
+}
+
 #fanart {
     padding: 5rem 0;
 }
 
-.fanartpic {
-    display: flex;
-    flex-direction: column;
-    width: 80%;
-    margin: 0 auto;
-    text-align: right;
-}
 .fan {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    margin: 0 auto;
-    padding: 0 15px;
 }
 
 .fanartimg {
     object-fit: cover;
     width: 20%;
     margin: 5px;
+    transition: all 0.3s ease;
+}
+
+.fanartimg:hover {
+    filter: brightness(125%);
+    border: 1px solid #C8A471;
 }
 
 .background p, .background h3 {
@@ -502,9 +503,7 @@ p {
 }
 
 .background {
-    width: 65%;
     border: 1px solid #C7A480;
-    margin: 0 auto;
     background-image: url("../img/img/cta-bg.png");
     background-position: left;
     background-size: cover;
@@ -513,6 +512,10 @@ p {
 
 .textbackground .btnbuy {
     font-size: 1.5rem;
+}
+
+footer h2 {
+    margin-bottom: 10%;
 }
 
 footer {

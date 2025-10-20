@@ -186,7 +186,7 @@ p {
     color: #FBCEA0;
 }
 
-.races-container {
+.races {
     display: flex;
     gap: 10%;
     margin-bottom: 5%;
@@ -282,7 +282,7 @@ p {
     font-family: "Gothic Regular";
 }
 
-.buy-container {
+.buy{
     height: 100vh;
     display: flex;
     width: 100%;
@@ -465,7 +465,7 @@ p {
     margin: 0 auto;
     text-align: right;
 }
-.fan-container {
+.fan {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;

@@ -229,8 +229,9 @@ p {
     object-fit: cover;
 }
 
-.logo-elf {
+.races-presentation a {
     width: 15%;
+    margin-top: 5%;
 }
 
 .decoration-line {
